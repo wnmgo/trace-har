@@ -147,6 +147,7 @@ dmypy.json
 
 # Generated artifacts
 reconstructed.har
+trace.har
 
 # Local trace inputs
 archive/

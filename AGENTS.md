@@ -38,8 +38,8 @@ pdm run trace-har TRACE_PATH --output reconstructed.har
 - Use conventional commits with detailed message bodies.
 - Commit small, commit often.
 - Use `gh` for repo/issue/PR management.
-- Do not include literal `\n` in commit/PR/issue bodies; write real newlines or
-  use `-m` per paragraph / `--body-file`.
+- Use a temp file or `--body-file` for multi-line, Markdown-friendly messages;
+  avoid inline `\\n` escapes in commit/PR/issue bodies.
 
 ## Release process
 
