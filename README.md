@@ -42,3 +42,9 @@ pdm run pytest
 - Response bodies are embedded into the HAR.
 - Binary bodies are stored as base64 with `encoding: base64`.
 - The converter preserves Playwright-specific fields like `_securityDetails`.
+
+## Example with a zip trace
+
+```bash
+pdm run trace-har trace_record.zip --output reconstructed.har
+```
