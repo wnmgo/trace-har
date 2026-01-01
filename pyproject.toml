@@ -1,0 +1,30 @@
+[project]
+name = "trace-har"
+version = "0.1.0"
+description = "Rebuild Playwright HAR files from trace artifacts"
+authors = [
+    {name = "wayne", email = "wayne@aimachine"},
+]
+dependencies = ["typer>=0.21.0", "rich>=14.2.0"]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.scripts]
+trace-har = "trace_har.cli:app"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+test = "pytest"
+
+[dependency-groups]
+test = [
+    "pytest>=9.0.2",
+]
